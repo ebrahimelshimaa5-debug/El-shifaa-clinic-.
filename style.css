@@ -1,0 +1,245 @@
+:root {
+    --primary-color: #d81b60;
+    --secondary-color: #f8bbd0;
+    --text-color: #333;
+    --bg-color: #fcf4f7;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+.clinic-header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.avatar-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--white);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.doctor-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clinic-header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.clinic-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+.clinic-nav a {
+    color: var(--white);
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: background 0.3s;
+    font-size: 0.95rem;
+}
+
+.clinic-nav a:hover {
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+/* Main Container & Cards */
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    margin-bottom: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.card p {
+    margin-bottom: 1.2rem;
+    color: #555;
+}
+
+/* Images & Upload */
+.responsive-img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.image-preview-box {
+    margin-bottom: 1rem;
+}
+
+.upload-control {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #fdf2f5;
+    border-radius: 8px;
+    border: 2px dashed var(--secondary-color);
+}
+
+.upload-btn {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+/* Grid Gallery */
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    background: #fafafa;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+.gallery-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Services List */
+.services-list {
+    list-style-type: none;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.services-list li {
+    background: #fdf2f5;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Doctors Table */
+.table-container {
+    overflow-x: auto;
+}
+
+.doctors-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.doctors-table th, .doctors-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.doctors-table th {
+    background-color: var(--secondary-color);
+    color: #880e4f;
+}
+
+.doctors-table tr:hover {
+    background-color: #fdf2f5;
+}
+
+/* Appointment Form */
+.appointment-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #444;
+}
+
+.form-group input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #ad1457;
+}
+
+/* Footer */
+.clinic-footer {
+    background-color: #333;
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+}
